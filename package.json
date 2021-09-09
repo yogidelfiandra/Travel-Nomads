@@ -1,0 +1,14 @@
+{
+  "name": "travel-nomads",
+  "version": "1.0.0",
+  "description": "Web Pemesanan Tiket Travel",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yogi Delfiandra",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}
