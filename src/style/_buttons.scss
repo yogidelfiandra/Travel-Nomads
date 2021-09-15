@@ -8,8 +8,31 @@
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.btn-success {
+.btn-login {
 	@extend .btn-master;
 	background: $greenlight;
 	color: $white;
+
+	&:hover {
+		background: $green;
+		color: $white;
+	}
+}
+
+.btn-navbar-right {
+	padding: 11px 30px;
+	margin-left: 30px;
+}
+
+.btn-explore {
+	@extend .btn-master;
+	background: $greenlight;
+	color: $white;
+	padding: 16px 30px;
+	margin: 15px 15px 15px 50px;
+
+	&:hover {
+		background: $green;
+		color: $white;
+	}
 }

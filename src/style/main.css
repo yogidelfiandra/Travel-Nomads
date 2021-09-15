@@ -1,4 +1,4 @@
-.btn-master, .btn-success {
+.btn-master, .btn-login, .btn-explore {
   font-size: 18px;
   font-weight: 500;
   border-radius: 6px;
@@ -7,9 +7,38 @@
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.btn-success {
+.btn-login {
   background: #18646B;
   color: #fff;
+}
+
+.btn-login:hover {
+  background: #12424C;
+  color: #fff;
+}
+
+.btn-navbar-right {
+  padding: 11px 30px;
+  margin-left: 30px;
+}
+
+.btn-explore {
+  background: #18646B;
+  color: #fff;
+  padding: 16px 30px;
+  margin: 15px 15px 15px 50px;
+}
+
+.btn-explore:hover {
+  background: #12424C;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -17,7 +46,7 @@ body {
 }
 
 .container {
-  margin: 0px 138px;
+  margin: 0 auto;
 }
 
 .navbar-nomads .navbar-nav li {
@@ -25,15 +54,96 @@ body {
   font-size: 18px;
 }
 
-.navbar-nomads .navbar-nav .active {
-  font-weight: 500;
-  text-decoration: underline;
+.banner {
+  position: relative;
+  width: 100%;
 }
 
-.hero-content .image-hero {
+.banner .bg {
+  position: relative;
   width: 100%;
   height: 100vh;
+  background: #18646B;
+}
+
+.banner .bg .banner-nomads {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.banner .bg .content-banner {
+  position: relative;
+  padding-top: 205px;
+  color: #fff;
+}
+
+.banner .bg .content-banner .subtitle {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.banner .bg .content-banner .title {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 8px 0 20px;
+  line-height: 75px;
+}
+
+.banner .bg .content-banner .description {
+  font-size: 20px;
+}
+
+.banner .bg .searchBox {
+  position: absolute;
+  margin-top: 96px;
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.banner .bg .searchBox form {
+  background: #fff;
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.banner .bg .searchBox form .inputBox {
+  padding: 17px 0 17px 50px;
+}
+
+.banner .bg .searchBox form .inputBox label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #12424C;
+  margin-bottom: 10px;
+}
+
+.banner .bg .searchBox form .inputBox .form-control {
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.popular {
+  background: #12424C;
+  color: #fff;
+}
+
+.popular .popular-heading {
+  padding: 100px 0 353px;
+}
+
+.popular .popular-heading .title {
+  font-size: 40px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

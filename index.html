@@ -15,6 +15,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+	<!-- Import Box Icons -->
+	<link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
+
 </head>
 <body>
 	<header>
@@ -40,18 +43,70 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">Testimonial</a>
 						</li>
-						<li class="nav-item">
-							<a class="btn btn-success px-4 nav-link" href="#">Sign In</a>
-						</li>
 					</ul>
+
+					<!-- Mobile Button -->
+					<form class="form-inline d-sm-block d-md-none">
+						<button class="btn btn-login my-2 my-sm-0">
+							Log In
+						</button>
+					</form>
+
+					<!-- Desktop Button -->
+					<form class="form-inline my-2 my-lg-0 d-none d-md-block">
+						<button class="btn btn-login btn-navbar-right my-2 my-sm-0">
+							Log In
+						</button>
+					</form>
 				</div>
 			</div>
 		</nav>
 	</header>
 	<main>
-		<section class="hero-content">
-			<img src="/src/images/hero-content.png" class="image-hero" alt="Image Hero Content">
+		<section class="banner">
+			<div class="bg">
+				<img src="/src/images/header.jpg" class="banner-nomads" alt="Banner NOMADS">
+
+				<div class="container">
+					<div class="content-banner">
+						<span class="subtitle">Discover your place</span>
+						<h1 class="title">Explore The Beautiful World <br> As Easy One Click</h1>
+						<p class="description">You will see beautiful moment you never see before</p>
+					</div>
+
+					<div class="searchBox">
+						<form action="#">
+							<div class="inputBox">
+								<label for="location">Location<span class="bx bxs-chevron-down ms-2" ></span></label>
+								<input type="text" name="location" class="form-control" placeholder="Enter your destinations" required>
+							</div>
+							<div class="inputBox">
+								<label for="date">Date<span class="bx bxs-chevron-down ms-2" ></span></label>
+								<input type="date" name="date" class="form-control" placeholder="When it will start?">
+							</div>
+							<div class="inputBox">
+								<label for="people">People<span class="bx bxs-chevron-down ms-2" ></span></label>
+								<input type="number" name="people" class="form-control" placeholder="How many people?" required>
+							</div>
+							<button type="submit" class="btn btn-explore submit">Explore Now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="popular">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center popular-heading">
+						<h1 class="title">Wisata Popular</h1>
+						<p class="subtitle">Something that you never try <br> before in this world</p>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
