@@ -1,7 +1,7 @@
-.btn-master, .btn-login, .btn-explore {
+.btn-master, .btn-login, .btn-explore, .btn-travel-details {
   font-size: 18px;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -34,6 +34,17 @@
   color: #fff;
 }
 
+.btn-travel-details {
+  background: #18646B;
+  color: #fff;
+  padding: 10px 38px;
+}
+
+.btn-travel-details:hover {
+  background: #12424C;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,11 +53,15 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   margin: 0 auto;
+}
+
+.sticky {
+  background-color: #12424C;
 }
 
 .navbar-nomads .navbar-nav li {
@@ -126,24 +141,86 @@ body {
   margin-bottom: 10px;
 }
 
-.banner .bg .searchBox form .inputBox .form-control {
+.banner .bg .searchBox form .inputBox input {
   padding: 0;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.popular {
+.section-popular {
+  min-height: 572px;
+  margin-bottom: -283px;
   background: #12424C;
   color: #fff;
 }
 
-.popular .popular-heading {
+.section-popular .popular-heading {
   padding: 100px 0 353px;
 }
 
-.popular .popular-heading .title {
+.section-popular .popular-heading .title {
   font-size: 40px;
   font-weight: 700;
+}
+
+.section-popular .popular-heading .subtitle {
+  font-size: 18px;
+}
+
+.section-popular-content .section-popular-travel .card-travel {
+  min-height: 486px;
+  background-color: #000;
+  color: #fff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.section-popular-content .section-popular-travel .card-travel .travel-country {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section-popular-content .section-popular-travel .card-travel .travel-location {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.section-popular-content .section-popular-travel .card-travel:hover {
+  -webkit-transform: scale();
+          transform: scale();
+}
+
+.section-experience .experience-heading {
+  margin-top: 80px;
+}
+
+.section-experience .experience-heading .title {
+  color: #12424C;
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.section-experience-stats {
+  margin-top: 83px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  place-items: center;
+}
+
+.section-experience-stats .stats-detail h2 {
+  color: #12424C;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.section-experience-stats .stats-detail p {
+  color: #18646B;
+  font-size: 20px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */

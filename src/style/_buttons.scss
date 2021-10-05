@@ -3,7 +3,7 @@
 .btn-master{
 	font-size: 18px;
 	font-weight: map-get($font-weights, medium);
-	border-radius: 6px;
+	border-radius: 8px;
 	border: 0;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -30,6 +30,18 @@
 	color: $white;
 	padding: 16px 30px;
 	margin: 15px 15px 15px 50px;
+
+	&:hover {
+		background: $green;
+		color: $white;
+	}
+}
+
+.btn-travel-details {
+	@extend .btn-master;
+	background: $greenlight;
+	color: $white;
+	padding: 10px 38px;
 
 	&:hover {
 		background: $green;
